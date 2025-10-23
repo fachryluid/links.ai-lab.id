@@ -1,31 +1,30 @@
 <html lang="en-US">
 
 <head>
-    <!-- META TAGS DASAR -->
     <meta charset="UTF-8">
-    <title>links.ai-lab</title>
+    <title>Links AI Lab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="robots" content="max-image-preview:large">
 
-    <!-- TAILWIND CSS & FONTS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CANONICAL & FAVICON -->
     <link rel="canonical" href="https://links.ai-lab.id/">
-    <link rel="icon" href="https://links.ai-lab.id/wp-content/uploads/2025/10/cropped-Favicon-14-32x32.png" sizes="32x32">
-    <link rel="icon" href="https://links.ai-lab.id/wp-content/uploads/2025/10/cropped-Favicon-14-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="https://links.ai-lab.id/wp-content/uploads/2025/10/cropped-Favicon-14-180x180.png">
-    <meta name="msapplication-TileImage" content="https://links.ai-lab.id/wp-content/uploads/2025/10/cropped-Favicon-14-270x270.png">
+    <link rel="icon" href="https://links.ai-lab.id/images/cropped-Favicon-14-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://links.ai-lab.id/images/cropped-Favicon-14-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://links.ai-lab.id/images/cropped-Favicon-14-180x180.png">
+    <meta name="msapplication-TileImage" content="https://links.ai-lab.id/images/cropped-Favicon-14-270x270.png">
 
-    <!-- STYLE KUSTOM (untuk efek yang tidak bisa dicapai dengan Tailwind standar) -->
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #F3F4F6;
-            /* Latar belakang fallback */
+        }
+
+        .gradient-border-button {
+            position: relative;
+            z-index: 10;
         }
 
         .gradient-border-button::before {
@@ -33,9 +32,7 @@
             position: absolute;
             inset: 0;
             border-radius: 8px;
-            /* rounded-lg */
             padding: 1.5px;
-            /* ketebalan border */
             background: linear-gradient(157.81deg, #591DB0 -122.8%, #FFFFFF 90.73%);
             -webkit-mask:
                 linear-gradient(#fff 0 0) content-box,
@@ -48,136 +45,135 @@
 </head>
 
 <body class="bg-white">
-    <div class="flex justify-center items-start min-h-screen p-4">
-        <div class="w-full max-w-md mx-auto">
-            <!-- Header Section -->
-            <div class="relative w-full max-w-[375px] mx-auto">
+    <div class="flex flex-col justify-center items-center min-h-screen p-4">
+        <div class="max-w-lg mx-auto">
+            <div class="max-w-lg mx-auto">
                 <img fetchpriority="high" decoding="async" src="images/6-min.png" class="h-24 mx-auto" alt="">
                 <img decoding="async" src="images/Image-1-min.png" class="w-full h-auto my-5" alt="">
             </div>
+        </div>
 
-            <!-- Content Sections -->
-            <div class="flex flex-col gap-y-6 px-6 pb-10">
-                <!-- 1001 Pioneer Ai Section -->
-                <div class="flex flex-col gap-y-4">
-                    <h3 class="text-[#0B001A] text-[20px] font-bold text-center">1001 Pioneer Ai</h3>
-                    <a href="https://discord.gg/euuvpB3JK" target="_blank" class="custom-button">
+        <div class="w-full max-w-lg flex flex-col gap-y-6 pb-10">
+            <div class="flex flex-col gap-y-4">
+                <h3 class="text-[#0B001A] text-[20px] font-bold text-center">1001 Pioneer Ai</h3>
+                <a href="https://discord.gg/euuvpB3JK" target="_blank" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span>Join AI Warrior Community</span>
                         <span class="px-2.5 py-1 rounded-lg text-sm font-medium bg-[#DCFCE7] text-[#166534]">Free</span>
-                    </a>
-                    <a href="https://ai-lab.id/" target="_blank" class="custom-button">
+                    </span>
+                </a>
+                <a href="https://ai-lab.id/" target="_blank" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="w-4 h-4">
                                 <path d="M1.71219 11.1477C1.23641 10.2008 0.96875 9.13109 0.96875 8C0.96875 6.86891 1.23641 5.79922 1.71219 4.85235C2.86766 2.54985 5.25078 0.96875 8 0.96875C10.7492 0.96875 13.1323 2.54985 14.2878 4.85235C14.7636 5.79922 15.0312 6.86891 15.0312 8C15.0312 9.13109 14.7636 10.2008 14.2878 11.1477C13.1323 13.4502 10.7492 15.0312 8 15.0312C5.25078 15.0312 2.86766 13.4502 1.71219 11.1477ZM2.36844 5.66891C2.07078 6.38703 1.90625 7.17453 1.90625 8C1.90625 8.82547 2.07078 9.61297 2.36844 10.3311C3.13391 10.0344 4.03625 9.79625 5.03234 9.63594C4.98078 9.11187 4.95312 8.56391 4.95312 8C4.95312 7.43609 4.98078 6.88813 5.03234 6.36406C4.03625 6.20375 3.13391 5.96563 2.36844 5.66891ZM13.2036 4.82938C12.4278 3.55953 11.2006 2.59578 9.74609 2.16078C9.81125 2.26203 9.87453 2.36938 9.93547 2.48281C10.3353 3.22953 10.655 4.24953 10.8472 5.435C11.7228 5.29297 12.5202 5.08625 13.2036 4.82938ZM6.25391 2.16078C4.79938 2.59578 3.57219 3.55953 2.79641 4.82938C3.47984 5.08672 4.27719 5.29297 5.15281 5.435C5.345 4.24953 5.66469 3.22953 6.06453 2.48281C6.12547 2.36938 6.18875 2.26203 6.25391 2.16078ZM13.6316 10.3311C13.9292 9.61297 14.0938 8.82547 14.0938 8C14.0938 7.17453 13.9292 6.38703 13.6316 5.66891C12.8661 5.96563 11.9638 6.20375 10.9677 6.36406C11.0192 6.88813 11.0469 7.43609 11.0469 8C11.0469 8.56391 11.0192 9.11187 10.9677 9.63594C11.9638 9.79625 12.8661 10.0344 13.6316 10.3311ZM2.79641 11.1706C3.57219 12.4405 4.79938 13.4042 6.25391 13.8392C6.18875 13.738 6.12547 13.6306 6.06453 13.5172C5.66469 12.7705 5.345 11.7505 5.15281 10.565C4.27719 10.707 3.47984 10.9137 2.79641 11.1706ZM9.74609 13.8392C11.2006 13.4042 12.4278 12.4405 13.2036 11.1706C12.5202 10.9137 11.7228 10.707 10.8472 10.565C10.655 11.7505 10.3353 12.7705 9.93547 13.5172C9.87453 13.6306 9.81125 13.738 9.74609 13.8392ZM8 1.90625C7.81953 1.90625 7.65078 1.99203 7.48859 2.12984C7.27109 2.31453 7.07234 2.58688 6.89094 2.92578C6.53281 3.59422 6.25156 4.50313 6.08 5.55828C6.69406 5.6225 7.33719 5.65625 8 5.65625C8.66281 5.65625 9.30594 5.62203 9.92 5.55828C9.74844 4.50313 9.46719 3.59422 9.10906 2.92578C8.92766 2.58688 8.72891 2.31453 8.51141 2.12984C8.34922 1.99203 8.18047 1.90625 8 1.90625ZM8 14.0938C8.18047 14.0938 8.34922 14.008 8.51141 13.8702C8.72891 13.6855 8.92766 13.4131 9.10906 13.0742C9.46719 12.4058 9.74844 11.4969 9.92 10.4417C9.30594 10.378 8.66281 10.3438 8 10.3438C7.33719 10.3438 6.69406 10.378 6.08 10.4417C6.25156 11.4969 6.53281 12.4058 6.89094 13.0742C7.07234 13.4131 7.27109 13.6855 7.48859 13.8702C7.65078 14.008 7.81953 14.0938 8 14.0938ZM10.0391 9.51266C10.085 9.02797 10.1094 8.52125 10.1094 8C10.1094 7.47875 10.085 6.97203 10.0391 6.48734C9.38703 6.55672 8.70359 6.59375 8 6.59375C7.29641 6.59375 6.61297 6.55672 5.96094 6.48734C5.915 6.97203 5.89062 7.47875 5.89062 8C5.89062 8.52125 5.915 9.02797 5.96094 9.51266C6.61297 9.44328 7.29641 9.40625 8 9.40625C8.70359 9.40625 9.38703 9.44328 10.0391 9.51266Z" fill="#591DB0"></path>
                             </svg>
                             <span>Official Website</span>
-                    </a>
-                    <a href="https://insider.ai-lab.id/" target="_blank" class="custom-button">
+                        </span>
+                    </span>
+                </a>
+                <a href="https://insider.ai-lab.id/" target="_blank" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span>Official News</span>
-                    </a>
-                </div>
+                    </span>
+                </a>
+            </div>
 
-                <!-- Class Section -->
-                <div class="flex flex-col gap-y-4">
-                    <h3 class="text-[#0B001A] text-[20px] font-bold text-center">Class</h3>
-                    <a href="https://ai-lab.id/ai-engineer/" target="_blank" class="custom-button">
+            <div class="flex flex-col gap-y-4">
+                <h3 class="text-[#0B001A] text-[20px] font-bold text-center">Class</h3>
+                <a href="https://ai-lab.id/ai-engineer/" target="_blank" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span>AI Engineer</span>
-                    </a>
-                    <a href="https://ai-superlab.com/ai-engineer" target="_blank" class="custom-button">
+                    </span>
+                </a>
+                <a href="https://ai-superlab.com/ai-engineer" target="_blank" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span>AI Engineer Trial Class</span>
                         <span class="px-2.5 py-1 rounded-lg text-sm font-medium bg-[#D6EBF8] text-[#0073b1]">Online</span>
-                    </a>
-                    <a href="https://ai-superlab.com/ai-engineer-offline-info" target="_blank" class="custom-button">
+                    </span>
+                </a>
+                <a href="https://ai-superlab.com/ai-engineer-offline-info" target="_blank" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span>AI Engineer Trial Class</span>
                         <span class="px-2.5 py-1 rounded-lg text-sm font-medium bg-[#F1E6FA] text-[#7D3DAF]">Offline</span>
-                    </a>
-                    <a href="#" class="custom-button">
+                    </span>
+                </a>
+                <a href="#" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span>Prompt Engineer</span>
                         <span class="px-2.5 py-1 rounded-lg text-sm font-medium bg-[#FFF5CC] text-[#B28500]">Coming Soon</span>
-                    </a>
-                    <a href="#" class="custom-button">
+                    </span>
+                </a>
+                <a href="#" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span>Prompt Engineer Trial Class</span>
                         <span class="px-2.5 py-1 rounded-lg text-sm font-medium bg-[#FFF5CC] text-[#B28500]">Coming Soon</span>
-                    </a>
-                </div>
+                    </span>
+                </a>
+            </div>
 
-                <!-- Smart Automation Section -->
-                <div class="flex flex-col gap-y-4">
-                    <h3 class="text-[#0B001A] text-[20px] font-bold text-center">Smart Automation</h3>
-                    <a href="https://ai-superlab.com/automation-consult" target="_blank" class="custom-button">
+            <div class="flex flex-col gap-y-4">
+                <h3 class="text-[#0B001A] text-[20px] font-bold text-center">Smart Automation</h3>
+                <a href="https://ai-superlab.com/automation-consult" target="_blank" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span>Smart Automation Consultation</span>
-                    </a>
-                    <a href="https://www.canva.com/design/DAGxCEM83z4/GI30UAmiQL9wSAa_NN17DA/view?utm_content=DAGxCEM83z4&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h86098b7528" class="custom-button">
+                    </span>
+                </a>
+                <a href="https://www.canva.com/design/DAGxCEM83z4/GI30UAmiQL9wSAa_NN17DA/view?utm_content=DAGxCEM83z4&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h86098b7528" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span>Our Portfolios</span>
-                    </a>
-                </div>
+                    </span>
+                </a>
+            </div>
 
-                <!-- Want to Collabs? Section -->
-                <div class="flex flex-col gap-y-4">
-                    <h3 class="text-[#0B001A] text-[20px] font-bold text-center">Want to Collabs?</h3>
-                    <a href="https://wa.me/6285117712626" target="_blank" class="custom-button">
+            <div class="flex flex-col gap-y-4">
+                <h3 class="text-[#0B001A] text-[20px] font-bold text-center">Want to Collabs?</h3>
+                <a href="https://wa.me/6285117712626" target="_blank" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none" class="w-4 h-4">
                                 <path d="M12.7626 2.67827C11.3535 1.27442 9.47895 0.500801 7.4839 0.5C5.49332 0.5 3.6158 1.27293 2.19742 2.67644C0.77652 4.08234 -0.00671387 5.95071 -0.00854492 7.93053V7.93282V7.9342C-0.00831604 9.13251 0.306511 10.3413 0.904121 11.4448L0.01194 15.5L4.11385 14.567C5.15274 15.0905 6.31191 15.3666 7.48104 15.367H7.48402C9.47426 15.367 11.3518 14.594 12.7704 13.1904C14.1925 11.7833 14.9761 9.91734 14.977 7.93626C14.9776 5.96913 14.1913 4.1018 12.7626 2.67827ZM7.4839 14.1963H7.48127C6.4315 14.1958 5.39135 13.9323 4.47342 13.4339L4.27944 13.3286L1.55186 13.949L2.14432 11.2564L2.03011 11.0595C1.46225 10.0802 1.16219 8.99918 1.16219 7.93294C1.16436 4.48174 3.99998 1.67073 7.48367 1.67073C9.16664 1.67142 10.748 2.32384 11.9363 3.50762C13.1427 4.70971 13.8068 6.28236 13.8062 7.93591C13.8048 11.3879 10.9686 14.1963 7.4839 14.1963Z" fill="#591DB0"></path>
                                 <path d="M5.44512 4.65613H5.11668C5.00235 4.65613 4.81673 4.69893 4.65971 4.86979C4.50259 5.04076 4.05981 5.45401 4.05981 6.29446C4.05981 7.13492 4.67402 7.94699 4.75962 8.06109C4.84534 8.17507 5.94523 9.95486 7.68725 10.6396C9.13504 11.2086 9.42973 11.0954 9.74387 11.0669C10.0581 11.0385 10.7579 10.6537 10.9007 10.2549C11.0436 9.85609 11.0436 9.51415 11.0008 9.44273C10.9579 9.37155 10.8435 9.32887 10.6722 9.24349C10.5008 9.15801 9.66078 8.73778 9.50365 8.68067C9.34653 8.62379 9.23232 8.5953 9.11799 8.76639C9.00366 8.93713 8.66709 9.33218 8.56707 9.44617C8.46716 9.56027 8.36714 9.57457 8.19571 9.48908C8.02428 9.40337 7.47794 9.2198 6.82322 8.63799C6.31361 8.18514 5.95999 7.60767 5.85997 7.4367C5.76006 7.26584 5.84933 7.17337 5.93527 7.08811C6.01229 7.01167 6.11632 6.90707 6.20203 6.80739C6.28764 6.7076 6.31201 6.63641 6.36923 6.52243C6.42634 6.40845 6.39773 6.30865 6.35493 6.22328C6.31201 6.13779 5.98311 5.29311 5.83067 4.95528H5.83079C5.70238 4.67078 5.56723 4.66116 5.44512 4.65613Z" fill="#591DB0"></path>
                             </svg>
                             <span>Whatsapp</span>
-                    </a>
-                    <a href="mailto:awesome@ai-lab.id" class="custom-button">
+                        </span>
+                    </span>
+                </a>
+                <a href="mailto:awesome@ai-lab.id" class="w-full no-underline">
+                    <span class="gradient-border-button w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-[#591DB0] font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden">
                         <span class="flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="w-4 h-4">
                                 <path d="M14.1731 2.72656H1.80981C1.08141 2.72656 0.491455 3.32018 0.491455 4.04492V11.9551C0.491455 12.6841 1.08574 13.2734 1.80981 13.2734H14.1731C14.8954 13.2734 15.4915 12.6866 15.4915 11.9551V4.04492C15.4915 3.32146 14.9038 2.72656 14.1731 2.72656ZM13.9885 3.60547C13.7191 3.87339 9.08373 8.48437 8.92368 8.64356C8.67466 8.89259 8.3436 9.0297 7.99146 9.0297C7.63931 9.0297 7.30825 8.89256 7.05841 8.64274C6.95077 8.53566 2.36654 3.97561 1.99444 3.60547H13.9885ZM1.37036 11.7762V4.22437L5.16835 8.00234L1.37036 11.7762ZM1.995 12.3945L5.79149 8.62218L6.43775 9.26504C6.85277 9.68006 7.40455 9.9086 7.99146 9.9086C8.57836 9.9086 9.13014 9.68006 9.54434 9.26586L10.1914 8.62218L13.9879 12.3945H1.995ZM14.6125 11.7762L10.8146 8.00234L14.6125 4.22437V11.7762Z" fill="#591DB0"></path>
                             </svg>
                             <span>Email</span>
+                        </span>
+                    </span>
+                </a>
+                <div class="flex justify-center items-center gap-x-4 pt-4">
+                    <a href="https://www.instagram.com/ailab.official/" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+                        <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
+                            <path d="M18 21.6915C20.0387 21.6915 21.6914 20.0388 21.6914 18.0001C21.6914 15.9614 20.0387 14.3087 18 14.3087C15.9613 14.3087 14.3086 15.9614 14.3086 18.0001C14.3086 20.0388 15.9613 21.6915 18 21.6915Z" fill="#EC00F0"></path>
+                            <path d="M18 0.421936C8.29188 0.421936 0.421875 8.29194 0.421875 18.0001C0.421875 27.7082 8.29188 35.5782 18 35.5782C27.7081 35.5782 35.5781 27.7082 35.5781 18.0001C35.5781 8.29194 27.7081 0.421936 18 0.421936ZM28.8603 22.4677C28.776 24.1389 28.3063 25.7869 27.0885 26.9918C25.8588 28.2082 24.203 28.6615 22.5157 28.745H13.4844C11.7969 28.6615 10.1413 28.2085 8.91162 26.9918C7.69366 25.7869 7.22412 24.1389 7.13974 22.4677V13.5324C7.22412 11.8612 7.69373 10.2132 8.91162 9.00822C10.1413 7.79181 11.7971 7.33858 13.4844 7.25512H22.5156C24.2031 7.33858 25.8587 7.7916 27.0884 9.00822C28.3063 10.2132 28.7759 11.8612 28.8603 13.5324L28.8603 22.4677Z" fill="#EC00F0"></path>
+                            <path d="M22.4015 9.291C20.2017 9.23068 15.7987 9.23068 13.5989 9.291C12.4542 9.32243 11.1564 9.60741 10.3408 10.4786C9.49325 11.3841 9.17297 12.4782 9.14049 13.7021C9.08339 15.8503 9.14049 22.298 9.14049 22.298C9.17768 23.5218 9.49325 24.616 10.3408 25.5215C11.1564 26.393 12.4542 26.6777 13.5989 26.7091C15.7987 26.7694 20.2017 26.7694 22.4015 26.7091C23.5463 26.6777 24.844 26.3927 25.6596 25.5215C26.5072 24.616 26.8275 23.5219 26.8599 22.298V13.7021C26.8275 12.4782 26.5072 11.3841 25.6596 10.4786C24.8437 9.60713 23.546 9.32243 22.4015 9.291ZM17.9999 23.7217C16.8683 23.7217 15.7621 23.3862 14.8211 22.7575C13.8802 22.1287 13.1469 21.2351 12.7138 20.1896C12.2807 19.1441 12.1674 17.9937 12.3882 16.8838C12.609 15.7739 13.1539 14.7544 13.9541 13.9542C14.7543 13.154 15.7738 12.6091 16.8837 12.3883C17.9936 12.1675 19.144 12.2808 20.1895 12.7139C21.235 13.147 22.1286 13.8803 22.7573 14.8213C23.386 15.7622 23.7216 16.8684 23.7216 18.0001C23.7216 19.5175 23.1188 20.9729 22.0458 22.0459C20.9727 23.1189 19.5174 23.7217 17.9999 23.7217ZM23.7459 13.4594C23.5196 13.4594 23.2984 13.3922 23.1103 13.2664C22.9221 13.1406 22.7755 12.9619 22.6889 12.7528C22.6023 12.5437 22.5797 12.3136 22.6239 12.0917C22.6681 11.8697 22.7771 11.6658 22.9372 11.5058C23.0972 11.3458 23.3011 11.2368 23.5231 11.1927C23.745 11.1486 23.9751 11.1713 24.1842 11.2579C24.3933 11.3445 24.572 11.4912 24.6977 11.6793C24.8235 11.8675 24.8906 12.0888 24.8906 12.3151C24.8906 12.4654 24.8609 12.6142 24.8034 12.7531C24.7459 12.8919 24.6616 13.0181 24.5553 13.1243C24.449 13.2306 24.3228 13.3149 24.1839 13.3724C24.0451 13.4299 23.8962 13.4594 23.7459 13.4594Z" fill="#EC00F0"></path>
+                        </svg>
                     </a>
-                    <!-- Social Icons -->
-                    <div class="flex justify-center items-center gap-x-4 pt-4">
-                        <a href="https://www.instagram.com/ailab.official/" target="_blank" class="bg-white rounded-full p-2 shadow-md">
-                            <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
-                                <path d="M18 21.6915C20.0387 21.6915 21.6914 20.0388 21.6914 18.0001C21.6914 15.9614 20.0387 14.3087 18 14.3087C15.9613 14.3087 14.3086 15.9614 14.3086 18.0001C14.3086 20.0388 15.9613 21.6915 18 21.6915Z" fill="#EC00F0"></path>
-                                <path d="M18 0.421936C8.29188 0.421936 0.421875 8.29194 0.421875 18.0001C0.421875 27.7082 8.29188 35.5782 18 35.5782C27.7081 35.5782 35.5781 27.7082 35.5781 18.0001C35.5781 8.29194 27.7081 0.421936 18 0.421936ZM28.8603 22.4677C28.776 24.1389 28.3063 25.7869 27.0885 26.9918C25.8588 28.2082 24.203 28.6615 22.5157 28.745H13.4844C11.7969 28.6615 10.1413 28.2085 8.91162 26.9918C7.69366 25.7869 7.22412 24.1389 7.13974 22.4677V13.5324C7.22412 11.8612 7.69373 10.2132 8.91162 9.00822C10.1413 7.79181 11.7971 7.33858 13.4844 7.25512H22.5156C24.2031 7.33858 25.8587 7.7916 27.0884 9.00822C28.3063 10.2132 28.7759 11.8612 28.8603 13.5324L28.8603 22.4677Z" fill="#EC00F0"></path>
-                                <path d="M22.4015 9.291C20.2017 9.23068 15.7987 9.23068 13.5989 9.291C12.4542 9.32243 11.1564 9.60741 10.3408 10.4786C9.49325 11.3841 9.17297 12.4782 9.14049 13.7021C9.08339 15.8503 9.14049 22.298 9.14049 22.298C9.17768 23.5218 9.49325 24.616 10.3408 25.5215C11.1564 26.393 12.4542 26.6777 13.5989 26.7091C15.7987 26.7694 20.2017 26.7694 22.4015 26.7091C23.5463 26.6777 24.844 26.3927 25.6596 25.5215C26.5072 24.616 26.8275 23.5219 26.8599 22.298V13.7021C26.8275 12.4782 26.5072 11.3841 25.6596 10.4786C24.8437 9.60713 23.546 9.32243 22.4015 9.291ZM17.9999 23.7217C16.8683 23.7217 15.7621 23.3862 14.8211 22.7575C13.8802 22.1287 13.1469 21.2351 12.7138 20.1896C12.2807 19.1441 12.1674 17.9937 12.3882 16.8838C12.609 15.7739 13.1539 14.7544 13.9541 13.9542C14.7543 13.154 15.7738 12.6091 16.8837 12.3883C17.9936 12.1675 19.144 12.2808 20.1895 12.7139C21.235 13.147 22.1286 13.8803 22.7573 14.8213C23.386 15.7622 23.7216 16.8684 23.7216 18.0001C23.7216 19.5175 23.1188 20.9729 22.0458 22.0459C20.9727 23.1189 19.5174 23.7217 17.9999 23.7217ZM23.7459 13.4594C23.5196 13.4594 23.2984 13.3922 23.1103 13.2664C22.9221 13.1406 22.7755 12.9619 22.6889 12.7528C22.6023 12.5437 22.5797 12.3136 22.6239 12.0917C22.6681 11.8697 22.7771 11.6658 22.9372 11.5058C23.0972 11.3458 23.3011 11.2368 23.5231 11.1927C23.745 11.1486 23.9751 11.1713 24.1842 11.2579C24.3933 11.3445 24.572 11.4912 24.6977 11.6793C24.8235 11.8675 24.8906 12.0888 24.8906 12.3151C24.8906 12.4654 24.8609 12.6142 24.8034 12.7531C24.7459 12.8919 24.6616 13.0181 24.5553 13.1243C24.449 13.2306 24.3228 13.3149 24.1839 13.3724C24.0451 13.4299 23.8962 13.4594 23.7459 13.4594Z" fill="#EC00F0"></path>
-                            </svg>
-                        </a>
-                        <a href="https://www.youtube.com/@ai-lab.indonesia" target="_blank" class="bg-white rounded-full p-2 shadow-md">
-                            <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
-                                <path d="M15.5038 20.9037L20.4964 18.0071L15.5038 15.0963V20.9037Z" fill="#EC00F0"></path>
-                                <path d="M18 0C14.4399 0 10.9598 1.05568 7.99974 3.03355C5.03966 5.01141 2.73255 7.82263 1.37018 11.1117C0.00779907 14.4008 -0.348661 18.02 0.345873 21.5116C1.04041 25.0033 2.75474 28.2106 5.27209 30.7279C7.78943 33.2453 10.9967 34.9596 14.4884 35.6541C17.98 36.3487 21.5992 35.9922 24.8883 34.6298C28.1774 33.2675 30.9886 30.9604 32.9665 28.0003C34.9443 25.0402 36 21.5601 36 18C36 13.2261 34.1036 8.64773 30.7279 5.27208C27.3523 1.89642 22.7739 0 18 0ZM27.4737 21.1855C27.474 21.6563 27.3815 22.1225 27.2016 22.5576C27.0217 22.9926 26.7578 23.3879 26.425 23.7209C26.0922 24.0539 25.697 24.3181 25.2621 24.4983C24.8272 24.6786 24.3611 24.7713 23.8903 24.7713H12.1097C11.639 24.7713 11.1728 24.6786 10.7379 24.4983C10.303 24.3181 9.90783 24.0539 9.57505 23.7209C9.24226 23.3879 8.97836 22.9926 8.79842 22.5576C8.61847 22.1225 8.52601 21.6563 8.52632 21.1855V14.8145C8.52601 14.3437 8.61847 13.8775 8.79842 13.4424C8.97836 13.0074 9.24226 12.6121 9.57505 12.2791C9.90783 11.9461 10.303 11.6819 10.7379 11.5017C11.1728 11.3215 11.639 11.2287 12.1097 11.2287H23.8903C24.3611 11.2287 24.8272 11.3215 25.2621 11.5017C25.697 11.6819 26.0922 11.9461 26.425 12.2791C26.7578 12.6121 27.0217 13.0074 27.2016 13.4424C27.3815 13.8775 27.474 14.3437 27.4737 14.8145V21.1855Z" fill="#EC00F0"></path>
-                            </svg>
-                        </a>
-                        <a href="https://www.tiktok.com/@ailab.official" target="_blank" class="bg-white rounded-full p-2 shadow-md">
-                            <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
-                                <path d="M18 0C8.06041 0 0 8.06041 0 18C0 27.9396 8.06041 36 18 36C27.9396 36 36 27.9396 36 18C36 8.06041 27.9396 0 18 0ZM27.0302 13.7723V16.2096C25.881 16.21 24.7643 15.9848 23.7112 15.5405C23.034 15.2546 22.4031 14.8862 21.8261 14.4411L21.8434 21.9429C21.8361 23.6322 21.1678 25.2193 19.9582 26.4149C18.9738 27.388 17.7265 28.0068 16.3745 28.2071C16.0568 28.2542 15.7335 28.2783 15.4066 28.2783C13.9594 28.2783 12.5854 27.8094 11.4614 26.9445C11.2499 26.7816 11.0476 26.6051 10.8551 26.4149C9.54415 25.1192 8.86816 23.3632 8.982 21.5159C9.06884 20.1097 9.63183 18.7687 10.5704 17.7176C11.8121 16.3266 13.5492 15.5546 15.4066 15.5546C15.7335 15.5546 16.0568 15.5791 16.3745 15.6262V16.5273V19.0341C16.0733 18.9347 15.7516 18.8801 15.4166 18.8801C13.7197 18.8801 12.3469 20.2646 12.3723 21.9627C12.3884 23.0493 12.9819 23.9991 13.8573 24.5226C14.2687 24.7687 14.7419 24.9211 15.247 24.9488C15.6427 24.9706 16.0227 24.9154 16.3745 24.7993C17.5869 24.3988 18.4615 23.26 18.4615 21.9169L18.4655 16.8933V7.72172H21.822C21.8252 8.0543 21.859 8.37879 21.9217 8.69323C22.175 9.96595 22.8924 11.0701 23.8909 11.8229C24.7615 12.4796 25.8455 12.8688 27.0205 12.8688C27.0213 12.8688 27.031 12.8688 27.0302 12.868V13.7723H27.0302Z" fill="#EC00F0"></path>
-                            </svg>
-                        </a>
-                    </div>
-
+                    <a href="https://www.youtube.com/@ai-lab.indonesia" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+                        <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
+                            <path d="M15.5038 20.9037L20.4964 18.0071L15.5038 15.0963V20.9037Z" fill="#EC00F0"></path>
+                            <path d="M18 0C14.4399 0 10.9598 1.05568 7.99974 3.03355C5.03966 5.01141 2.73255 7.82263 1.37018 11.1117C0.00779907 14.4008 -0.348661 18.02 0.345873 21.5116C1.04041 25.0033 2.75474 28.2106 5.27209 30.7279C7.78943 33.2453 10.9967 34.9596 14.4884 35.6541C17.98 36.3487 21.5992 35.9922 24.8883 34.6298C28.1774 33.2675 30.9886 30.9604 32.9665 28.0003C34.9443 25.0402 36 21.5601 36 18C36 13.2261 34.1036 8.64773 30.7279 5.27208C27.3523 1.89642 22.7739 0 18 0ZM27.4737 21.1855C27.474 21.6563 27.3815 22.1225 27.2016 22.5576C27.0217 22.9926 26.7578 23.3879 26.425 23.7209C26.0922 24.0539 25.697 24.3181 25.2621 24.4983C24.8272 24.6786 24.3611 24.7713 23.8903 24.7713H12.1097C11.639 24.7713 11.1728 24.6786 10.7379 24.4983C10.303 24.3181 9.90783 24.0539 9.57505 23.7209C9.24226 23.3879 8.97836 22.9926 8.79842 22.5576C8.61847 22.1225 8.52601 21.6563 8.52632 21.1855V14.8145C8.52601 14.3437 8.61847 13.8775 8.79842 13.4424C8.97836 13.0074 9.24226 12.6121 9.57505 12.2791C9.90783 11.9461 10.303 11.6819 10.7379 11.5017C11.1728 11.3215 11.639 11.2287 12.1097 11.2287H23.8903C24.3611 11.2287 24.8272 11.3215 25.2621 11.5017C25.697 11.6819 26.0922 11.9461 26.425 12.2791C26.7578 12.6121 27.0217 13.0074 27.2016 13.4424C27.3815 13.8775 27.474 14.3437 27.4737 14.8145V21.1855Z" fill="#EC00F0"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@ailab.official" target="_blank" class="bg-white rounded-full p-2 shadow-md">
+                        <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="none">
+                            <path d="M18 0C8.06041 0 0 8.06041 0 18C0 27.9396 8.06041 36 18 36C27.9396 36 36 27.9396 36 18C36 8.06041 27.9396 0 18 0ZM27.0302 13.7723V16.2096C25.881 16.21 24.7643 15.9848 23.7112 15.5405C23.034 15.2546 22.4031 14.8862 21.8261 14.4411L21.8434 21.9429C21.8361 23.6322 21.1678 25.2193 19.9582 26.4149C18.9738 27.388 17.7265 28.0068 16.3745 28.2071C16.0568 28.2542 15.7335 28.2783 15.4066 28.2783C13.9594 28.2783 12.5854 27.8094 11.4614 26.9445C11.2499 26.7816 11.0476 26.6051 10.8551 26.4149C9.54415 25.1192 8.86816 23.3632 8.982 21.5159C9.06884 20.1097 9.63183 18.7687 10.5704 17.7176C11.8121 16.3266 13.5492 15.5546 15.4066 15.5546C15.7335 15.5546 16.0568 15.5791 16.3745 15.6262V16.5273V19.0341C16.0733 18.9347 15.7516 18.8801 15.4166 18.8801C13.7197 18.8801 12.3469 20.2646 12.3723 21.9627C12.3884 23.0493 12.9819 23.9991 13.8573 24.5226C14.2687 24.7687 14.7419 24.9211 15.247 24.9488C15.6427 24.9706 16.0227 24.9154 16.3745 24.7993C17.5869 24.3988 18.4615 23.26 18.4615 21.9169L18.4655 16.8933V7.72172H21.822C21.8252 8.0543 21.859 8.37879 21.9217 8.69323C22.175 9.96595 22.8924 11.0701 23.8909 11.8229C24.7615 12.4796 25.8455 12.8688 27.0205 12.8688C27.0213 12.8688 27.031 12.8688 27.0302 12.868V13.7723H27.0302Z" fill="#EC00F0"></path>
+                        </svg>
+                    </a>
                 </div>
+
             </div>
         </div>
-        <script>
-            // Konfigurasi Tailwind untuk warna kustom
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            'brand-purple': '#591DB0',
-                        }
-                    }
-                }
-            }
+    </div>
 
-            // Wrapper untuk tombol kustom agar sesuai dengan struktur baru
-            document.querySelectorAll('.custom-button').forEach(button => {
-                const content = button.innerHTML;
-                button.innerHTML = '';
-                const wrapper = document.createElement('span');
-                wrapper.className = 'relative w-full inline-flex justify-between items-center px-6 py-3 rounded-lg bg-white text-brand-purple font-semibold shadow-[4px_4px_7.2px_0px_rgba(0,0,0,0.15)] overflow-hidden z-10 gradient-border-button';
-                wrapper.innerHTML = content;
-                button.appendChild(wrapper);
-                button.className = 'w-full no-underline';
-            });
-        </script>
 </body>
 
 </html>
