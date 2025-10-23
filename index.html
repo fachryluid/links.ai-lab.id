@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="robots" content="max-image-preview:large">
 
-    <link rel="stylesheet" href="src/output.css">
+    <!-- Preconnect to Google Fonts for faster connection -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Load CSS and Fonts asynchronously to prevent render-blocking -->
+    <link rel="stylesheet" href="src/output.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
     <link rel="canonical" href="https://links.ai-lab.id/">
-    <link rel="icon" href="https://links.ai-lab.id/images/cropped-Favicon-14-32x32.png" sizes="32x32">
-    <link rel="icon" href="https://links.ai-lab.id/images/cropped-Favicon-14-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="https://links.ai-lab.id/images/cropped-Favicon-14-180x180.png">
-    <meta name="msapplication-TileImage" content="https://links.ai-lab.id/images/cropped-Favicon-14-270x270.png">
+    <link rel="icon" href="https://links.ai-lab.id/images/cropped-Favicon-14-32x32.webp" sizes="32x32">
+    <link rel="icon" href="https://links.ai-lab.id/images/cropped-Favicon-14-192x192.webp" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://links.ai-lab.id/images/cropped-Favicon-14-180x180.webp">
+    <meta name="msapplication-TileImage" content="https://links.ai-lab.id/images/cropped-Favicon-14-270x270.webp">
 
     <style>
         body {
@@ -47,13 +49,11 @@
 <body class="bg-white">
     <div class="flex flex-col justify-center items-center min-h-screen p-4">
         <div class="max-w-lg mx-auto">
-            <div class="max-w-lg mx-auto">
-                <img fetchpriority="high" decoding="async" src="images/6-min.png" class="h-24 mx-auto" alt="">
-                <img decoding="async" src="images/Image-1-min.png" class="w-full h-auto my-5" alt="">
-            </div>
+            <img fetchpriority="high" decoding="async" src="images/6-min.webp" class="h-24 mx-auto" alt="AI Lab Logo" width="auto" height="96">
+            <img decoding="async" loading="lazy" src="images/Image-1-min.webp" class="w-full h-auto my-5" alt="AI Lab Mascot" width="auto" height="auto">
         </div>
 
-        <div class="w-full max-w-lg flex flex-col gap-y-6 pb-10">
+        <main class="w-full max-w-lg flex flex-col gap-y-6 pb-10">
             <div class="flex flex-col gap-y-4">
                 <h3 class="text-[#0B001A] text-[20px] font-bold text-center">1001 Pioneer Ai</h3>
                 <a href="https://discord.gg/euuvpB3JK" target="_blank" class="w-full no-underline">
@@ -171,7 +171,7 @@
                 </div>
 
             </div>
-        </div>
+        </main>
     </div>
 
 </body>
