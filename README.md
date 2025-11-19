@@ -13,16 +13,16 @@ This is a static link-sharing page built with HTML and Tailwind CSS.
 
 ## Getting Started
 
-### Prasyarat
+### Requirement
 
 *   Node.js and npm must be installed.
 
-### Instalasi
+### Instalation
 
 1.  Clone the repository:
     ```sh
-    git clone https://github.com/fachryluid/links.ai-lab.id.git
-    cd links.ai-lab.id
+    git clone https://github.com/AI-Lab-Indoneisa/links-ai-lab.git
+    cd links-ai-lab.id
     ```
 
 2.  Install dependencies:
